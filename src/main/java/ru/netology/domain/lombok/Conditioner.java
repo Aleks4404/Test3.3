@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Conditioner {
     private int id;
-    private String name = "noname";
+    private String name = "Winter Cold";
     private int maxTemperature = 30;
     private int minTemperature = 15;
     private int currentTemperature = 22;
