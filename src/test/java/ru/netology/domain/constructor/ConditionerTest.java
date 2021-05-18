@@ -14,11 +14,11 @@ class ConditionerTest {
                 1,
                 "Winter Cold",
                 30,
-                10,
-                29,
+                15,
+                22,
                 true
         );
-        assertEquals("noname", conditioner.getName());
+        assertEquals("Winter Cold", conditioner.getName());
         assertEquals(30, conditioner.getMaxTemperature());
         assertEquals(15, conditioner.getMinTemperature());
         assertEquals(22, conditioner.getCurrentTemperature());
@@ -28,7 +28,7 @@ class ConditionerTest {
     public void shouldUseNoArgsConstructor() {
         Conditioner conditioner = new Conditioner();
 
-        assertEquals("noname", conditioner.getName());
+        assertEquals("Winter Cold", conditioner.getName());
         assertEquals(30, conditioner.getMaxTemperature());
         assertEquals(15, conditioner.getMinTemperature());
         assertEquals(22, conditioner.getCurrentTemperature());
